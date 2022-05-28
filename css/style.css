@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+html{
+    font-size: 15px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    width: 54%;
+
+}
+.card1,.card2,.card3{
+    width: 33%;    
+    display: flex;
+    padding: 10% 2rem ;
+    flex-direction: column;
+}
+.cards h2{
+    font-size: 2em;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    color:hsl(0, 0%, 95%);
+}
+p{
+    font-family: 'Lexend Deca';
+    color:hsla(0, 0%, 100%, 0.75)
+}
+.card1{
+    background-color: hsl(31, 77%, 52%);
+}
+.card2{
+    background-color: hsl(184, 100%, 22%);
+}
+.card3{
+    background-color: hsl(179, 100%, 13%);
+}
+.info{
+    display: flex;
+    border-radius: 15px;
+    background-color: white;
+    height:3rem;
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-top: 2em;
+}
+.info:hover{
+    opacity: 0.7;
+}
+.card1 .info strong{
+    color: #E38826;
+}
+.card2 .info strong{
+    color: #006970;
+}
+.card3 .info strong{
+    color: #004241;
+}
+@media only screen and (max-width: 990px) {
+    body{
+        height: auto;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card1,.card2,.card3{
+        width: 100%;
+        height: 33%;
+    }
+  }
